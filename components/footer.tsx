@@ -5,7 +5,7 @@ const footerLinks = {
     { label: "Woven Labels", href: "#products" },
     { label: "Hang Tags", href: "#products" },
     { label: "Printed Labels", href: "#products" },
-    { label: "Care Labels", href: "#services" },
+
   ],
   Company: [
     { label: "About Us", href: "#about" },
