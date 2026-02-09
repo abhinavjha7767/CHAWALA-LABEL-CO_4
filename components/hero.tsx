@@ -5,7 +5,7 @@ import Link from "next/link";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { useEffect, useState } from "react";
 
-const words = ["Labels", "Tags", "Stickers", "Packaging"];
+const words = ["Labels", "Tags", "Stickers"];
 
 export default function Hero() {
   const [wordIndex, setWordIndex] = useState(0);
@@ -85,7 +85,7 @@ export default function Hero() {
 
             {/* Stats Row */}
             <div className="flex items-center gap-8 pt-4">
-              <div className="flex flex-col">
+              <div className="flex flex-col text-center">
                 <span className="font-serif text-3xl font-bold text-primary">
                   0
                 </span>
@@ -96,7 +96,7 @@ export default function Hero() {
               <div className="h-10 w-px bg-border" />
               <div className="h-10 w-px bg-border" />
               <div className="flex flex-col">
-                <span className="font-serif text-3xl font-bold text-primary">
+                <span className="font-serif text-3xl font-bold text-primary text-center">
                   0
                 </span>
                 <span className="text-sm text-muted-foreground">

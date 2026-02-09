@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X, Phone } from "lucide-react";
 import { ModeToggle } from "@/components/mode-toggle";
 
@@ -24,13 +25,15 @@ export default function Navbar() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
-          <Link href="#home" className="flex flex-col">
-            <span className="font-serif text-2xl font-bold tracking-tight text-primary">
-              AS PRINTERS
-            </span>
-            <span className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
-              A unit of Chawala Company
-            </span>
+          <Link href="#home" className="flex items-center">
+            <Image
+              src="/images/logo.png"
+              alt="AS PRINTERS Logo"
+              width={180}
+              height={60}
+              className="h-12 w-auto object-contain"
+              priority
+            />
           </Link>
 
           {/* Desktop Nav */}
