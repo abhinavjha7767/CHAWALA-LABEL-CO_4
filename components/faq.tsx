@@ -1,13 +1,13 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { Plus, Minus } from "lucide-react"
+import { useState } from "react";
+import { Plus, Minus } from "lucide-react";
 
 const faqs = [
   {
     question: "What is the minimum order quantity?",
     answer:
-      "Our minimum order quantity varies by product. Woven labels start at 1,000 pieces, hang tags at 500 pieces, and printed stickers at 1,000 pieces. For custom packaging solutions, minimums depend on the complexity and materials involved. Contact us for specific MOQ details for your project.",
+      "Our minimum order quantity varies by product. Woven labels start at 1,000 pieces, hang tags at 500 pieces, and printed stickers at 1,000 pieces. Contact us for specific MOQ details for your project.",
   },
   {
     question: "How long does production take?",
@@ -17,7 +17,7 @@ const faqs = [
   {
     question: "Can I get custom shapes and designs?",
     answer:
-      "Absolutely. We specialize in custom solutions including die-cut shapes, unique folds for woven labels, custom embossing patterns, and bespoke packaging designs. Our in-house design team can help bring your vision to life or work with your existing brand guidelines.",
+      "Absolutely. We specialize in custom solutions including die-cut shapes, unique folds for woven labels, and custom embossing patterns. Our in-house design team can help bring your vision to life or work with your existing brand guidelines.",
   },
   {
     question: "Do you provide design services?",
@@ -27,17 +27,17 @@ const faqs = [
   {
     question: "What materials do you work with?",
     answer:
-      "We work with a wide range of materials including satin, damask, taffeta, cotton, and polyester for woven labels; art card, kraft, and specialty textured papers for hang tags; vinyl, paper, BOPP, and holographic films for stickers; and various substrates for packaging.",
+      "We work with a wide range of materials including satin, damask, taffeta, cotton, and polyester for woven labels; art card, kraft, and specialty textured papers for hang tags; and vinyl, paper, BOPP, and holographic films for stickers.",
   },
   {
     question: "Do you ship outside of India?",
     answer:
       "Yes, we serve clients across the globe. We offer international shipping with reliable logistics partners. International orders typically have a slightly higher MOQ and longer lead times. Get in touch for an international shipping quote tailored to your needs.",
   },
-]
+];
 
 export default function FAQ() {
-  const [openIndex, setOpenIndex] = useState<number | null>(0)
+  const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
     <section id="faq" className="py-24 lg:py-32 bg-background">
@@ -58,7 +58,7 @@ export default function FAQ() {
         {/* Accordion */}
         <div className="flex flex-col">
           {faqs.map((faq, index) => {
-            const isOpen = openIndex === index
+            const isOpen = openIndex === index;
             return (
               <div key={faq.question} className="border-b border-border">
                 <button
@@ -71,7 +71,11 @@ export default function FAQ() {
                     {faq.question}
                   </span>
                   <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
-                    {isOpen ? <Minus className="h-4 w-4" /> : <Plus className="h-4 w-4" />}
+                    {isOpen ? (
+                      <Minus className="h-4 w-4" />
+                    ) : (
+                      <Plus className="h-4 w-4" />
+                    )}
                   </span>
                 </button>
                 <div
@@ -79,13 +83,15 @@ export default function FAQ() {
                     isOpen ? "max-h-96 pb-6" : "max-h-0"
                   }`}
                 >
-                  <p className="text-muted-foreground leading-relaxed">{faq.answer}</p>
+                  <p className="text-muted-foreground leading-relaxed">
+                    {faq.answer}
+                  </p>
                 </div>
               </div>
-            )
+            );
           })}
         </div>
       </div>
     </section>
-  )
+  );
 }

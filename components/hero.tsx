@@ -87,25 +87,17 @@ export default function Hero() {
             <div className="flex items-center gap-8 pt-4">
               <div className="flex flex-col">
                 <span className="font-serif text-3xl font-bold text-primary">
-                  500+
+                  0
                 </span>
                 <span className="text-sm text-muted-foreground">
                   Brands Served
                 </span>
               </div>
               <div className="h-10 w-px bg-border" />
-              <div className="flex flex-col">
-                <span className="font-serif text-3xl font-bold text-primary">
-                  30+
-                </span>
-                <span className="text-sm text-muted-foreground">
-                  Years Experience
-                </span>
-              </div>
               <div className="h-10 w-px bg-border" />
               <div className="flex flex-col">
                 <span className="font-serif text-3xl font-bold text-primary">
-                  10M+
+                  0
                 </span>
                 <span className="text-sm text-muted-foreground">
                   Labels Delivered
@@ -127,21 +119,6 @@ export default function Hero() {
               <div className="absolute inset-0 bg-gradient-to-t from-[hsl(var(--plum-dark))]/40 to-transparent" />
             </div>
             {/* Floating Card */}
-            <div className="absolute -bottom-6 -left-6 bg-background rounded-2xl p-5 shadow-xl border border-border animate-float">
-              <div className="flex items-center gap-3">
-                <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center">
-                  <Sparkles className="h-6 w-6 text-primary" />
-                </div>
-                <div>
-                  <p className="text-sm font-semibold text-foreground">
-                    ISO Certified
-                  </p>
-                  <p className="text-xs text-muted-foreground">
-                    Quality Assured
-                  </p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>

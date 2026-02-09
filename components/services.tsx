@@ -1,6 +1,13 @@
-"use client"
+"use client";
 
-import { Tag, Sticker, Layers, Printer, Ribbon, PackageCheck } from "lucide-react"
+import {
+  Tag,
+  Sticker,
+  Layers,
+  Printer,
+  Ribbon,
+  PackageCheck,
+} from "lucide-react";
 
 const services = [
   {
@@ -13,7 +20,7 @@ const services = [
     icon: Sticker,
     title: "Printed Stickers",
     description:
-      "Full-color, weather-resistant stickers with custom die-cuts. From holographic to matte finish, ideal for branding and packaging.",
+      "Full-color, weather-resistant stickers with custom die-cuts. From holographic to matte finish, ideal for branding and identity.",
   },
   {
     icon: Layers,
@@ -31,15 +38,9 @@ const services = [
     icon: Ribbon,
     title: "Satin Ribbons",
     description:
-      "Custom-printed satin ribbons for branding, gift wrapping, and premium packaging. Rich colors and crisp logo reproduction.",
+      "Custom-printed satin ribbons for branding, gift wrapping, and product presentation. Rich colors and crisp logo reproduction.",
   },
-  {
-    icon: PackageCheck,
-    title: "Packaging Solutions",
-    description:
-      "Complete packaging from printed boxes to tissue paper, poly bags with brand elements. End-to-end packaging for your products.",
-  },
-]
+];
 
 export default function Services() {
   return (
@@ -54,16 +55,17 @@ export default function Services() {
             Our Expertise, Your Brand
           </h2>
           <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-            From concept to delivery, we provide comprehensive branding solutions
-            that elevate your clothing line with premium quality materials.
+            From concept to delivery, we provide comprehensive branding
+            solutions that elevate your clothing line with premium quality
+            materials.
           </p>
         </div>
 
         {/* Services Grid - Asymmetric Layout */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => {
-            const Icon = service.icon
-            const isLarge = index === 0 || index === 5
+            const Icon = service.icon;
+            const isLarge = index === 0 || index === 5;
             return (
               <div
                 key={service.title}
@@ -71,9 +73,10 @@ export default function Services() {
                   isLarge ? "md:col-span-2 lg:col-span-1" : ""
                 }`}
                 style={{
-                  background: index % 2 === 0
-                    ? "hsl(var(--card))"
-                    : "hsl(var(--plum-light))",
+                  background:
+                    index % 2 === 0
+                      ? "hsl(var(--card))"
+                      : "hsl(var(--plum-light))",
                 }}
               >
                 <div className="flex flex-col gap-6">
@@ -94,10 +97,10 @@ export default function Services() {
                   </span>
                 </div>
               </div>
-            )
+            );
           })}
         </div>
       </div>
     </section>
-  )
+  );
 }

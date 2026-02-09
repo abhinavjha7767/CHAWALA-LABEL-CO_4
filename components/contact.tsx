@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import { MapPin, Phone, Mail, Clock } from "lucide-react"
+import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
 const contactInfo = [
   {
@@ -23,11 +23,15 @@ const contactInfo = [
     title: "Working Hours",
     lines: ["Mon - Sat: 9:00 AM - 7:00 PM", "Sunday: Closed"],
   },
-]
+];
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-24 lg:py-32 relative overflow-hidden" style={{ background: "hsl(var(--plum-light))" }}>
+    <section
+      id="contact"
+      className="py-24 lg:py-32 relative overflow-hidden"
+      style={{ background: "hsl(var(--plum-light))" }}
+    >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16">
           {/* Left - Info */}
@@ -39,13 +43,13 @@ export default function Contact() {
               Let&apos;s Bring Your Brand Vision to Life
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Ready to elevate your brand with premium labels, tags, and packaging?
-              Reach out to us and our team will get back to you within 24 hours.
+              Ready to elevate your brand with premium labels and tags? Reach
+              out to us and our team will get back to you within 24 hours.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-4">
               {contactInfo.map((item) => {
-                const Icon = item.icon
+                const Icon = item.icon;
                 return (
                   <div key={item.title} className="flex items-start gap-4">
                     <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary/10">
@@ -62,7 +66,7 @@ export default function Contact() {
                       ))}
                     </div>
                   </div>
-                )
+                );
               })}
             </div>
           </div>
@@ -72,10 +76,16 @@ export default function Contact() {
             <h3 className="font-serif text-2xl font-bold text-foreground mb-8">
               Request a Quote
             </h3>
-            <form className="flex flex-col gap-5" onSubmit={(e) => e.preventDefault()}>
+            <form
+              className="flex flex-col gap-5"
+              onSubmit={(e) => e.preventDefault()}
+            >
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div className="flex flex-col gap-2">
-                  <label htmlFor="name" className="text-sm font-medium text-foreground">
+                  <label
+                    htmlFor="name"
+                    className="text-sm font-medium text-foreground"
+                  >
                     Full Name
                   </label>
                   <input
@@ -86,7 +96,10 @@ export default function Contact() {
                   />
                 </div>
                 <div className="flex flex-col gap-2">
-                  <label htmlFor="company" className="text-sm font-medium text-foreground">
+                  <label
+                    htmlFor="company"
+                    className="text-sm font-medium text-foreground"
+                  >
                     Company
                   </label>
                   <input
@@ -99,7 +112,10 @@ export default function Contact() {
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div className="flex flex-col gap-2">
-                  <label htmlFor="email" className="text-sm font-medium text-foreground">
+                  <label
+                    htmlFor="email"
+                    className="text-sm font-medium text-foreground"
+                  >
                     Email
                   </label>
                   <input
@@ -110,7 +126,10 @@ export default function Contact() {
                   />
                 </div>
                 <div className="flex flex-col gap-2">
-                  <label htmlFor="phone" className="text-sm font-medium text-foreground">
+                  <label
+                    htmlFor="phone"
+                    className="text-sm font-medium text-foreground"
+                  >
                     Phone
                   </label>
                   <input
@@ -122,7 +141,10 @@ export default function Contact() {
                 </div>
               </div>
               <div className="flex flex-col gap-2">
-                <label htmlFor="product" className="text-sm font-medium text-foreground">
+                <label
+                  htmlFor="product"
+                  className="text-sm font-medium text-foreground"
+                >
                   Product Interest
                 </label>
                 <select
@@ -138,12 +160,15 @@ export default function Contact() {
                   <option value="stickers">Printed Stickers</option>
                   <option value="care">Care Labels</option>
                   <option value="ribbons">Satin Ribbons</option>
-                  <option value="packaging">Packaging Solutions</option>
+
                   <option value="other">Other / Multiple</option>
                 </select>
               </div>
               <div className="flex flex-col gap-2">
-                <label htmlFor="message" className="text-sm font-medium text-foreground">
+                <label
+                  htmlFor="message"
+                  className="text-sm font-medium text-foreground"
+                >
                   Message
                 </label>
                 <textarea
@@ -164,5 +189,5 @@ export default function Contact() {
         </div>
       </div>
     </section>
-  )
+  );
 }

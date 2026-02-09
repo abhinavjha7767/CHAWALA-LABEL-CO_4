@@ -130,3 +130,8 @@
 html {
   scroll-behavior: smooth;
 }
+
+[data-nextjs-toast],
+nextjs-portal {
+  display: none !important;
+}

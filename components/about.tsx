@@ -19,17 +19,13 @@ export default function About() {
           <div className="lg:col-span-2 relative">
             <div className="relative aspect-[3/4] rounded-3xl overflow-hidden">
               <Image
-                src="/images/about-team.jpg"
+                src="/images/About.jpg"
                 alt="AS PRINTERS team and production facility"
                 fill
                 className="object-cover"
               />
             </div>
             {/* Overlapping accent card */}
-            <div className="absolute -bottom-8 -right-4 lg:-right-10 bg-primary rounded-2xl p-6 text-primary-foreground shadow-xl">
-              <p className="font-serif text-4xl font-bold">30+</p>
-              <p className="text-sm opacity-80 mt-1">Years of Excellence</p>
-            </div>
           </div>
 
           {/* Right - Content */}
@@ -45,8 +41,8 @@ export default function About() {
                 AS PRINTERS, a unit of Chawala Company, has been at the
                 forefront of the brand labeling industry since 1995. What began
                 as a small printing press has grown into one of India&apos;s
-                most trusted manufacturers of woven labels, hang tags, printed
-                stickers, and complete packaging solutions.
+                most trusted manufacturers of woven labels, hang tags, and
+                printed stickers.
               </p>
               <p>
                 Our state-of-the-art facility in Delhi NCR houses the latest in

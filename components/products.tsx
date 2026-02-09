@@ -7,7 +7,7 @@ const products = [
   {
     title: "Woven Labels",
     subtitle: "Damask & Satin Weave",
-    image: "/images/product-woven.jpg",
+    image: "/images/woven_labels.webp",
     features: [
       "High-density weave",
       "Custom colors",
@@ -18,7 +18,7 @@ const products = [
   {
     title: "Hang Tags",
     subtitle: "Premium Card Stock",
-    image: "/images/product-tags.jpg",
+    image: "/images/hang-tags.webp",
     features: [
       "Foil stamping",
       "Emboss & deboss",
@@ -27,9 +27,9 @@ const products = [
     ],
   },
   {
-    title: "Printed Stickers",
+    title: "Printed Labels",
     subtitle: "Vinyl & Paper Stock",
-    image: "/images/product-stickers.jpg",
+    image: "/images/printed_labels.webp",
     features: [
       "Full-color CMYK",
       "Die-cut shapes",
@@ -59,8 +59,8 @@ export default function Products() {
             Products That Define Your Brand
           </h2>
           <p className="mt-6 text-lg text-[hsl(280,15%,70%)] leading-relaxed">
-            Explore our curated range of labeling and packaging products crafted
-            specifically for the fashion and clothing industry.
+            Explore our curated range of labeling products crafted specifically
+            for the fashion and clothing industry.
           </p>
         </div>
 
@@ -103,15 +103,6 @@ export default function Products() {
                     </li>
                   ))}
                 </ul>
-                <div className="mt-8">
-                  <button
-                    type="button"
-                    className="inline-flex items-center gap-2 rounded-full border border-[hsl(280,60%,45%)] px-6 py-3 text-sm font-medium text-[hsl(280,60%,70%)] hover:bg-[hsl(280,60%,45%)] hover:text-[hsl(300,20%,95%)] transition-colors"
-                  >
-                    Request Samples
-                    <ArrowUpRight className="h-4 w-4" />
-                  </button>
-                </div>
               </div>
             </div>
           ))}
