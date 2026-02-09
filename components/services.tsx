@@ -28,18 +28,6 @@ const services = [
     description:
       "Thick cardstock hang tags with options for foil stamping, embossing, and spot UV. Make a first impression that lasts.",
   },
-  {
-    icon: Printer,
-    title: "Care Labels",
-    description:
-      "Durable, regulation-compliant care and wash instruction labels. Satin, nylon, and cotton options for every fabric type.",
-  },
-  {
-    icon: Ribbon,
-    title: "Satin Ribbons",
-    description:
-      "Custom-printed satin ribbons for branding, gift wrapping, and product presentation. Rich colors and crisp logo reproduction.",
-  },
 ];
 
 export default function Services() {
@@ -92,9 +80,7 @@ export default function Services() {
                     </p>
                   </div>
                   <div className="h-px w-full bg-border group-hover:bg-primary/20 transition-colors" />
-                  <span className="text-sm font-medium text-primary opacity-0 group-hover:opacity-100 transition-opacity">
-                    Learn more &rarr;
-                  </span>
+                  
                 </div>
               </div>
             );
